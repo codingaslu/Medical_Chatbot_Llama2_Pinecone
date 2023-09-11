@@ -13,15 +13,15 @@ import os
 import timeit
 import sys
 load_dotenv()
-PINECONE_API_KEY=os.environ.get('PINECONE_API_KEY','be0b7b2c-9da9-41a6-af8f-6aec4b9d2ab6')
-PINECONE_API_ENV=os.environ.get('gcp-starter')
+PINECONE_API_KEY=os.environ.get('PINECONE_API_KEY','your api')
+PINECONE_API_ENV=os.environ.get('your env')
 
 
 import pinecone      
 
 pinecone.init(      
-	api_key='be0b7b2c-9da9-41a6-af8f-6aec4b9d2ab6',      
-	environment='gcp-starter'      
+	api_key='your api',      
+	environment='your env'      
 )      
 index = pinecone.Index('langchanepinecones')
 
